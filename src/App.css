@@ -1,0 +1,346 @@
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+.App-header {
+  background-image: url(../public/p.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+    
+.nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: transparent;
+  height: 60px;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: rgba(18, 3, 3, 0.971);
+  color: rgb(174, 75, 13);
+}
+
+.nav-bar1{
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+z-index: 5;
+  align-items: center;
+}
+
+.nav-bar3>div{
+  display: none;
+  width: 15px;
+  height: 10px;
+  color: white;
+}
+
+.nav-bar4{
+  height: 20px;
+  width: 20px;
+}
+
+.sidebar {
+  position: absolute;
+  background-color: rgb(174, 75, 13); ;
+  color: white;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  transform: translateX(100%);;
+  transition: all 0.4s;
+  z-index: 6;
+}
+
+.sidebar--open{
+  transform: translateX(0%);;
+}
+
+.sidebar a{
+  list-style: none;
+  padding: 1rem 2rem;
+display: flex;
+align-items: center;
+gap: 1rem;
+font-weight: 300;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.sign{
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 35px;
+  color: white;
+}
+
+.sign1{
+  color: white;
+}
+
+.sign1:hover{
+  color: rgb(174, 75, 13);;
+}
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+display: none;
+}
+
+.backdrop--open{
+  display: block;
+}
+
+
+@media (max-width:626px) {
+  .nav-bar1> a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: none;
+  }
+  .nav-bar3>div{
+    display: flex;
+    color: white;
+  }
+}
+
+.nav-bar1> a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-bar1> a:hover {
+  color: rgba(255, 255, 255, 0.508);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.App-link1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.436);
+}
+
+.nav-bar.open {
+  display: block;
+}
+
+.nav-link {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.writeup {
+  padding: 50px;
+  text-align: center;
+  height: 50vh;
+  text-align: center;
+  z-index: 0;
+  color: white;
+  background: black;
+
+}
+
+.writeup1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.writeup2{
+  width: 180px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.App-pnk2{
+border: .5px solid grey;
+border-radius: 5px;
+width: 150px;
+height: 40px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-pnk2:hover{
+color: black;
+background-color: white;
+}
+
+.writeup3{
+  width: 180px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 30px;
+  
+}
+
+.writeup2:hover{
+ color:black;
+ background: white;
+}
+
+.writeup3:hover{
+  color:black;
+  background: white;
+ }
+
+.writeups h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.roadmap {
+  text-align: start;
+  height: 80vh;
+  z-index: 0;
+  background: white;
+ color : black;
+}
+
+.roadmap1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+
+@media (max-width:640px) {
+  .roadmap1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    word-wrap: break-word;
+    box-sizing: content-box;
+  }
+  .roadmap {
+    text-align: center;
+    height: 80vh;
+    text-align: center;
+    z-index: 0;
+    background: white;
+   color : black;
+  }
+
+  .writeup1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.roadmap h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.roadmap li {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.last-section {
+  background:black;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.last-section h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
